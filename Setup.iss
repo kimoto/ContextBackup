@@ -2,9 +2,20 @@
 AppName=ContextBackup
 AppVerName=ContextBackup 1.0
 OutputDir=.\
-OutputBaseFilename=Setup
+OutputBaseFilename=Setup(x64)
 DefaultDirName={pf}\ContextBackup
-SourceDir=C:\Users\kimoto\Documents\Visual Studio 2010\Projects\ContextBackup
+SourceDir=.\
+VersionInfoVersion=0.0.0.0
+VersionInfoDescription=description
+AppCopyright=kimoto
+AppPublisher=kimoto
+AppPublisherURL=
+AppVersion=1.0
+AppContact=peerler@gmail.com
+AppSupportURL=
+AppReadmeFile={app}\readme.txt
+AppUpdatesURL=
+AppComments=ContextBackup
 
 [Files]
 Source: readme.txt; DestDir: {app}
