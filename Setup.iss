@@ -16,6 +16,8 @@ AppSupportURL=
 AppReadmeFile={app}\readme.txt
 AppUpdatesURL=
 AppComments=ContextBackup
+ArchitecturesInstallIn64BitMode=x64
+ArchitecturesAllowed=x64
 
 [Files]
 Source: readme.txt; DestDir: {app}
