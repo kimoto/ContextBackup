@@ -22,6 +22,9 @@
 
 #define SLIDER_GETPOS(lp) (::SendMessage((HWND)lp, TBM_GETPOS, 0, 0))
 
+#define DLLIMPORT extern "C" __declspec(dllimport)
+#define DLLEXPORT extern "C" __declspec(dllimport)
+
 void trace(LPCTSTR format, ...);
 void FillRectBrush(HDC hdc, int x, int y, int width, int height, COLORREF color);
 void BorderedRect(HDC hdc, int x, int y, int width, int height, COLORREF color);
@@ -63,3 +66,4 @@ LPTSTR GetBaseName(LPCTSTR path);
 LPTSTR GetBackupFilePath(LPCTSTR filePath, LPCTSTR backupExt);
 BOOL BackupFile(LPCTSTR filePath, LPCTSTR backupExt);
 BOOL RestoreFile(LPCTSTR filePath, LPCTSTR backupExt);
+LPTSTR GetWindowTitle(HWND hWnd);

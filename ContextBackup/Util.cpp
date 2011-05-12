@@ -667,3 +667,10 @@ BOOL RestoreFile(LPCTSTR filePath, LPCTSTR backupExt=L".bak")
 	::GlobalFree(backupFilePath);
 	return bRet;
 }
+
+LPTSTR GetWindowTitle(HWND hWnd)
+{
+	LPTSTR buffer = (LPTSTR)::GlobalAlloc(GMEM_FIXED, 256 * sizeof(TCHAR));
+	::GetWindowText(hWnd, buffer, 256);
+	return buffer;
+}
